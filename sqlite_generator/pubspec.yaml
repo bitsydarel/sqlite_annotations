@@ -1,0 +1,19 @@
+name: sqlite_generator
+description: SQLite code generator.
+version: 1.0.0
+# homepage: https://www.example.com
+author: darelbitsy <bitsydarel@gmail.com>
+
+environment:
+  sdk: '>=2.3.0 <3.0.0'
+
+dependencies:
+  source_gen: ^0.9.4+2
+  code_builder: ^3.2.0
+  sqlite_annotations:
+    path: ../
+#  path: ^1.4.1
+
+dev_dependencies:
+  pedantic: ^1.0.0
+  test: ^1.0.0
