@@ -2,7 +2,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
 import 'package:meta/meta.dart';
 import 'package:source_gen/source_gen.dart';
-import 'package:sqlite_annotations/sqlite_annotations.dart';
+import 'package:sqlite_statements/sqlite_statements.dart';
 
 class SQLiteColumnElement {
   final FieldElement _columnInfo;
@@ -26,16 +26,16 @@ class SQLiteColumnElement {
       errorHolder.add(columnWithoutTypeError);
     }
 
-    final String notNull = _columnAnnotation.primaryKey ? "NOT NULL" : "";
+    final String notNull = _columnAnnotation.primaryKey ? " NOT NULL" : "";
 
-    return "$columnName $columnType $notNull";
+    return "$columnName $columnType$notNull";
   }
 
   bool get isPrimaryKey => _columnAnnotation.primaryKey;
 
   String get columnName => _columnAnnotation.name ?? _columnInfo.displayName;
 
-  String get columnType => _columnAnnotation.toString().split('.')[1];
+  String get columnType => _columnAnnotation.type.toString().split('.')[1];
 
   static SQLiteColumn findColumnAnnotation(final FieldElement field) {
     final annotation = const TypeChecker.fromRuntime(SQLiteColumn)

@@ -1,7 +1,7 @@
-name: sqlite_annotations
+name: sqlite_statements
 description: SQLite code annotations for entities.
 version: 1.0.0
-# homepage: https://www.example.com
+homepage: https://github.com/bitsydarel/sqlite_annotations
 author: darelbitsy <bitsydarel@gmail.com>
 
 environment:
@@ -11,9 +11,9 @@ environment:
 #  path: ^1.4.1
 
 dev_dependencies:
-  sqlite_generator:
+  sqlite_statements_generator:
     path:
-      sqlite_generator
+      sqlite_statements_generator
   build_runner: ^1.4.0
   pedantic: ^1.0.0
   test: ^1.0.0

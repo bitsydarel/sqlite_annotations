@@ -4,10 +4,10 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:build/build.dart';
 import 'package:build/src/builder/build_step.dart';
 import 'package:meta/meta.dart';
-import 'package:sqlite_annotations/sqlite_annotations.dart';
 import 'package:source_gen/source_gen.dart';
-import 'package:sqlite_generator/src/sqlite_column_element.dart';
-import 'package:sqlite_generator/src/sqlite_table_element.dart';
+import 'package:sqlite_statements/sqlite_statements.dart';
+import 'package:sqlite_statements_generator/src/sqlite_column_element.dart';
+import 'package:sqlite_statements_generator/src/sqlite_table_element.dart';
 
 /// SQLite code generator for each class annotated with [SQLiteTable]
 class SQLiteGenerator extends GeneratorForAnnotation<SQLiteTable> {

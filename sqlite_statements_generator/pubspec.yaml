@@ -1,7 +1,7 @@
-name: sqlite_generator
-description: SQLite code generator.
+name: sqlite_statements_generator
+description: SQLite statements code generator.
 version: 1.0.0
-# homepage: https://www.example.com
+homepage: https://github.com/bitsydarel/sqlite_statements/sqlite_statements_generator
 author: darelbitsy <bitsydarel@gmail.com>
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   source_gen: ^0.9.4+2
   code_builder: ^3.2.0
-  sqlite_annotations:
+  sqlite_statements:
     path: ../
 #  path: ^1.4.1
 

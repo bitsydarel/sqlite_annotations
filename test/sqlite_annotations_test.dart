@@ -1,4 +1,4 @@
-import 'package:sqlite_annotations/sqlite_annotations.dart';
+import 'package:sqlite_statements/sqlite_statements.dart';
 import 'package:test/test.dart';
 
 void main() {

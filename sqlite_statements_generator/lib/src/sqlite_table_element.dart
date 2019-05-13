@@ -5,7 +5,7 @@ import 'package:meta/meta.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:code_builder/code_builder.dart';
 import 'package:source_gen/source_gen.dart';
-import 'package:sqlite_generator/src/sqlite_column_element.dart';
+import 'package:sqlite_statements_generator/src/sqlite_column_element.dart';
 
 class SQLiteTableElement {
   final ClassElement _tableInfo;

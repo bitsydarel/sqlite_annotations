@@ -1,4 +1,5 @@
-import 'package:sqlite_annotations/sqlite_annotations.dart';
+
+import 'package:sqlite_statements/sqlite_statements.dart';
 
 part 'db_sqlite_example.g.dart';
 
@@ -15,6 +16,7 @@ class Item {
 
   final String name;
 
+  @SQLiteColumn(ColumnType.REAL)
   final double price;
 
   Item(this.id, this.name, this.price);
