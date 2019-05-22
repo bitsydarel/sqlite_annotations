@@ -9,7 +9,7 @@ import 'package:db_sqlite/db_sqlite.dart';
 
 @SQLiteTable
 class SomeTable {
-  @SQLiteColumn
+  @SQLiteColumn(ColumnType.TEXT)
   String someColumn;
 }
 ```
